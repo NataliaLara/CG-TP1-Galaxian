@@ -41,7 +41,7 @@ void realizarAtaqueAgressivo();
 GLuint texturaBack[12];
 GLuint texturaInimigo,texturaInimigo2,texturaInimigo3,texturaTiroInimigo,texturaGameOver, texturaNave;
 GLuint texturaTiro, texturaPausado, texturaEsc,texturaReiniciar,texturaPause,texturaWin, texturaIniciar;
-GLuint texturaTitulo, texturaCreditos, texturaVoltar;
+GLuint texturaTitulo, texturaCreditos, texturaVoltar, texturaTituloCreditos, texturaAutores;
 GLfloat pos_x;
 GLfloat pos_y;
 GLint confirmaTiro=0;

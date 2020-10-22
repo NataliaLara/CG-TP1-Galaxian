@@ -207,30 +207,59 @@ void telaInicial(){
 
 void telaCreditos(){
     glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, texturaVoltar);
+    glBindTexture(GL_TEXTURE_2D, texturaEsc);
     glBegin(GL_POLYGON);
         glTexCoord2f(0, 0);
-        glVertex3f(200, 400,  0);
+        glVertex3f(0, 1750,  0);
         glTexCoord2f(1, 0);
-        glVertex3f( 600,  400,  0);
+        glVertex3f( 230,  1750,  0);
         glTexCoord2f(1, 1);
-        glVertex3f( 600,  600,  0);
+        glVertex3f( 230,  1900,  0);
         glTexCoord2f(0, 1);
-        glVertex3f(200, 600,  0);
+        glVertex3f(0, 1900,  0);
     glEnd();
     glDisable(GL_TEXTURE_2D);
 
     glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, texturaEsc);
+    glBindTexture(GL_TEXTURE_2D, texturaVoltar);
     glBegin(GL_POLYGON);
         glTexCoord2f(0, 0);
-        glVertex3f(200, 100,  0);
+        glVertex3f(570, 1750,  0);
         glTexCoord2f(1, 0);
-        glVertex3f( 600,  100,  0);
+        glVertex3f( 800,  1750,  0);
         glTexCoord2f(1, 1);
-        glVertex3f( 600,  300,  0);
+        glVertex3f( 800,  1900,  0);
         glTexCoord2f(0, 1);
-        glVertex3f(200, 300,  0);
+        glVertex3f(570, 1900,  0);
     glEnd();
     glDisable(GL_TEXTURE_2D);
+
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, texturaTituloCreditos);
+    glBegin(GL_POLYGON);
+        glTexCoord2f(0, 0);
+        glVertex3f(100, 1200,  0);
+        glTexCoord2f(1, 0);
+        glVertex3f( 700,  1200,  0);
+        glTexCoord2f(1, 1);
+        glVertex3f( 700,  1500,  0);
+        glTexCoord2f(0, 1);
+        glVertex3f(100, 1500,  0);
+    glEnd();
+    glDisable(GL_TEXTURE_2D);
+
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, texturaAutores);
+    glBegin(GL_POLYGON);
+        glTexCoord2f(0, 0);
+        glVertex3f(150, 400,  0);
+        glTexCoord2f(1, 0);
+        glVertex3f( 650,  400,  0);
+        glTexCoord2f(1, 1);
+        glVertex3f( 650,  1000,  0);
+        glTexCoord2f(0, 1);
+        glVertex3f(150, 1000,  0);
+    glEnd();
+    glDisable(GL_TEXTURE_2D);
+
 }

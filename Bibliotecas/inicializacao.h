@@ -61,7 +61,7 @@ void inicializaInimigos(){
 
 void inicializaTexturas(){
 
-    texturaTitulo = carregaTextura("Imagens/Titulo/titulo3.png");
+    texturaTitulo = carregaTextura("Imagens/Titulos/titulo3.png");
     glEnable( GL_BLEND );
     glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
     if (texturaTitulo == 0) {
@@ -73,6 +73,20 @@ void inicializaTexturas(){
     glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
     if (texturaCreditos== 0) {
         printf("Erro do SOIL fundo de Creditos: '%s'\n", SOIL_last_result());
+    }
+
+    texturaTituloCreditos = carregaTextura("Imagens/Titulos/creditos1.png");
+    glEnable( GL_BLEND );
+    glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
+    if (texturaTituloCreditos== 0) {
+        printf("Erro do SOIL fundo de Titulo de Creditos: '%s'\n", SOIL_last_result());
+    }
+
+    texturaAutores = carregaTextura("Imagens/Titulos/Autores.png");
+    glEnable( GL_BLEND );
+    glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
+    if (texturaAutores== 0) {
+        printf("Erro do SOIL fundo de Autores: '%s'\n", SOIL_last_result());
     }
 
     texturaVoltar = carregaTextura("Imagens/Botoes/Opcao1/botaoVoltar.png");
