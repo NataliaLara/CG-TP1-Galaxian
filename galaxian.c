@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
    glutInitWindowSize(window_width, window_height);
    //glutInitWindowPosition(300, 100);
-   glutInitWindowPosition(10, 10);
+   glutInitWindowPosition(300, 10);
 
    glutCreateWindow("A Guerra contras as plataformas de video");
 

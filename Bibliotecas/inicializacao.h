@@ -121,14 +121,14 @@ void inicializaTexturas(){
     if (texturaReiniciar == 0) {
         printf("Erro do SOIL fundo de Iniciar: '%s'\n", SOIL_last_result());
     }
-    texturaPausado =  carregaTextura("Imagens/Botoes/pause3.png");
+    texturaPausado =  carregaTextura("Imagens/Titulos/pause3.png");
     glEnable( GL_BLEND );
     glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
     if (texturaPausado == 0) {
         printf("Erro do SOIL fundo de Pausado: '%s'\n", SOIL_last_result());
     }
 
-    texturaGameOver = carregaTextura("Imagens/Botoes/gameover.png");
+    texturaGameOver = carregaTextura("Imagens/Titulos/gameover.png");
     glEnable( GL_BLEND );
     glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
     if (texturaGameOver == 0) {
@@ -174,14 +174,6 @@ void inicializaTexturas(){
     if (texturaTiro == 0) {
         printf("Erro do SOIL fundo do Tiro da Nave: '%s'\n", SOIL_last_result());
     }
-
-    /*
-    texturaTiroInimigo = carregaTextura("Imagens/Inimigos/tiro.png");
-    glEnable( GL_BLEND );
-    glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
-    if (texturaTiroInimigo == 0) {
-        printf("Erro do SOIL fundo do Tiro Inimigo: '%s'\n", SOIL_last_result());
-    }*/
 
     texturaBack[0] = carregaTextura("Imagens/Back2/1.png");
     glEnable( GL_BLEND );
@@ -273,7 +265,7 @@ void inicializaTexturas(){
         printf("Erro do SOIL fundo: '%s'\n", SOIL_last_result());
     }
 
-    texturaWin = carregaTextura("Imagens/Botoes/youwin.png");
+    texturaWin = carregaTextura("Imagens/Titulos/youwin.png");
     glEnable( GL_BLEND );
     glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
 

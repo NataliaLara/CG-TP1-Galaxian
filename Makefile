@@ -5,6 +5,5 @@ galaxian:
 	./galaxian
 	rm -rf galaxian
 
-
 clean:
 	rm -rf galaxian
