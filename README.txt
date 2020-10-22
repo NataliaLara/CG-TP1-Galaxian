@@ -9,7 +9,7 @@ Instruções para a compilação e execução:
 	O jogo foi feito no ambiente Linux, para realizar a compilação, é necessário efetuar o seguinte comando no terminal:
 	gcc galaxian.c -lglut -lGLU -lGL -lSOIL -o galaxian
 
-	ou pelo Makefile:
+	Ou pelo Makefile:
 	make galaxian
 	
 	2)Execução
