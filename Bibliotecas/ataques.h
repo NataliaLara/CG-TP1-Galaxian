@@ -68,7 +68,7 @@ void realizarTiroInimigo(){
     }  
 }
 
-void realizarataqueAgrassivo(){
+void realizarAtaqueAgressivo(){
     if(tempo_milisegundos%2000==0){
         int inimigo= rand()%10;
         while(inimigo_morto[inimigo] == 1){

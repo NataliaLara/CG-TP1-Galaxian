@@ -153,7 +153,7 @@ void desenhaMinhaCena() {
 
                     tempo_milisegundos=(clock()/(CLOCKS_PER_SEC/1000));
                     
-                    realizarataqueAgrassivo();//realizar Ataque mais agressivo                    
+                    realizarAtaqueAgressivo();//realizar Ataque mais agressivo                    
 
                     acertoAtaqueAgressivo();//Detectando acerto de ataque mais agressivo                    
                     
@@ -173,10 +173,12 @@ void desenhaMinhaCena() {
                         confirmTiro_inimigo=0;
                     }
                     //resetando ataque agressivo
-                    if(inimigoAtaqueAgr.y<=0 &&confirmAtaqueAgr==1){
+                    if(inimigos[ataAgr_inimigo].y<=0 &&confirmAtaqueAgr==1){
                         confirmAtaqueAgr=0;
-                        inimigo_morto[ataAgr_inimigo]=1;
-                        inimigos_mortos++;
+                        //inimigo_morto[ataAgr_inimigo]=1;                        
+                        inimigos[ataAgr_inimigo]=inimigoAtaqueAgr;
+                        inimigos[ataAgr_inimigo].ataque_agressivo=0;
+                        //inimigos_mortos++;
                     }
                     
                     desenhaTiro();

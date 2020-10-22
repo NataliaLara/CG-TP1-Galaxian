@@ -36,7 +36,7 @@ void acertoTiroNave();
 void acertoTiroInimigo();
 void acertoAtaqueAgressivo();
 void realizarTiroInimigo();
-void realizarataqueAgrassivo();
+void realizarAtaqueAgressivo();
 
 GLuint texturaBack[12];
 GLuint texturaInimigo,texturaInimigo2,texturaInimigo3,texturaTiroInimigo,texturaGameOver, texturaNave;

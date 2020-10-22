@@ -85,6 +85,10 @@ void desenhaInimigos(int i){
      if(inimigo_morto[i] ==0){
         glPushMatrix(); // Importante!!
         glTranslatef(inimigos[i].x, inimigos[i].y, 0);
+        if(confirmAtaqueAgr==1){
+            if(inimigoAtaqueAgr.x<15) inimigoAtaqueAgr.alterar_sentido = 1;
+            if(inimigoAtaqueAgr.x>680) inimigoAtaqueAgr.alterar_sentido = 0;
+        }
         if(inimigos[i].x<15) inimigos[i].alterar_sentido = 1;
         if(inimigos[i].x>680) inimigos[i].alterar_sentido = 0;
         glEnable(GL_TEXTURE_2D);

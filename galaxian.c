@@ -46,7 +46,10 @@ void atualiza() {
                 if(inimigo_morto[i]!=1){
                     if(inimigos[i].ataque_agressivo==1){
                         inimigos[i].y -=1;
-                        inimigoAtaqueAgr.y-=1;
+                        inimigoAtaqueAgr.y-=0.3;
+                        if(inimigoAtaqueAgr.alterar_sentido==0) //continua o movimento para o inimigo de ataque agressivo
+                            inimigoAtaqueAgr.x -=1;
+                        else inimigoAtaqueAgr.x +=1;
                     }else{
                         if(inimigos[i].alterar_sentido==0)
                             inimigos[i].x -=1;
