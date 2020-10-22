@@ -11,7 +11,7 @@ Instruções para a compilação e execução:
 	E para realizar a execução do jogo execute o comando abaixo:
 	./a.out
 
-	Outra opção é utilizar o arquivo Makefile. Para colocar o seguinte comando no terminal:
+	Outra opção é utilizar o arquivo Makefile. Para isso, basta colocar o seguinte comando no terminal:
 	make galaxian
 
 Lista de itens adicionais implementados:
